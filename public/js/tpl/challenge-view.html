@@ -1,0 +1,140 @@
+
+<div class="challenge row-fluid challenge-<%- item.id %>">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h4>Step no. <%- item.step %></h4>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+
+        <div aria-label="Default button group" role="group" class="btn-group">
+            <button class=" moveUp btn btn-default" type="button">
+                Up
+            </button>
+            <button class="moveDown btn btn-default" type="button">
+                Down
+            </button>
+            <button class="btn btn-default remove" type="button">
+                X
+            </button>
+        </div>
+        
+    </div>
+</div>
+<div class="challenge row-fluid challenge-<%- item.id %>">
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+        <form class="form-inline">
+            
+            <% if (isLast) { %>
+            
+
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmountss">Coupon value</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">€</div>
+                        <input type="text" class="form-control" id="exampleInputAmountss" placeholder="20%">
+                    </div>
+                </div>
+                
+            
+            <% } else { %>
+            
+            <div class="form-group">
+
+                <label for="challenge-quest-<%- item.id %>">Game type</label>
+
+                <select
+                    class="form-control quest" 
+                    id="challenge-quest-<%- item.id %>" 
+                    placeholder="Game type">
+
+                    <option value="puzzle">Puzzle</option>
+                    
+                    <option value="tictac" disabled>TicTac</option>
+                    <option value="find" disabled>Find the differences</option>
+                    <option value="xox" disabled>X-O-X</option>
+
+                </select>
+            </div>
+
+            <div class="form-puzzle game-options">
+
+                <h5>Puzzle Options</h5>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Number of parts</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="9">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Difficulty</label>
+                    <select>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Difficult</option>
+                    </select>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="exampleInputFile">Load image</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Upload an image to use.</p>
+                  </div>
+
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Image Url</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">http://</div>
+                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="flickr.com/456dfds645sdfsd">
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="form-tictac game-options">
+
+                <h5>Tic tac Options</h5>
+
+            </div>
+
+            <div class="form-find game-options">
+
+                <h5>Find the difference Options</h5>
+
+            </div>
+
+            <div class="form-xox game-options">
+
+                <h5>X-O-X Options</h5>
+
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                        Option one is this and that&mdash;be sure to include why it's great
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                        Option two can be something else and selecting it will deselect option one
+                    </label>
+                </div>
+                <div class="radio disabled">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                        Option three is disabled
+                    </label>
+                </div>                
+
+            </div>
+
+            <% } %>            
+            
+        </form>        
+
+        <hr />        
+
+    </div>
+</div>

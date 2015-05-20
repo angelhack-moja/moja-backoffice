@@ -1,0 +1,27 @@
+{
+  "name": "hackaton-moja",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Luca Capra <luca.capra@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.0",
+    "bootstrap": "~3.3.4",
+    "marionette": "~2.4.1",
+    "leaflet": "~0.7.3",
+    "require-css": "~0.1.8",
+    "requirejs-text": "~2.0.14",
+    "requirejs": "~2.1.17",
+    "Chart.js": "~1.0.2"
+  }
+}

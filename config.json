@@ -1,0 +1,11 @@
+{
+    "clusterpoint": {
+        "username" : "youremail@example.com", 
+        "password": "your password", 
+        "account": 123,
+        "url": "tcp://cloud-eu-0.clusterpoint.com:9007",
+        "db": "dbname", 
+        "doc": "document", 
+        "doc_id": "document/id"
+    }
+}
