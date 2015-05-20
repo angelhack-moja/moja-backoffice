@@ -9,9 +9,14 @@ Configuration
 
 2) run `npm install` to install dependencies
 
+3) `bower install` for frontend dependencies (install bower first `sudo npm i -g bower` )
+
 3) `node index.js` to start the app
+
+Copyright
+---
+The moja team 
 
 License
 ---
-
 MIT
